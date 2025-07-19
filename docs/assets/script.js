@@ -28,7 +28,7 @@ function register() {
   if (user && pass) {
     localStorage.setItem("user_" + user, hash(pass));
     alert("Registered successfully!");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   } else {
     alert("Fill in all fields.");
   }
@@ -41,7 +41,7 @@ function login() {
     const stored = localStorage.getItem("user_" + user);
     if (stored && stored == hash(pass)) {
       localStorage.setItem("loggedInUser", user);
-      window.location.href = "index.html";
+      window.location.href = "site.html";
     } else {
       alert("Invalid credentials.");
     }
