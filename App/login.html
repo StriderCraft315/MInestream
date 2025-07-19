@@ -1,98 +1,19 @@
-<!DOCTYPE html><html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CoolStar</title>
-  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-    body {
-      font-family: 'Ubuntu', sans-serif;
-      background: linear-gradient(to bottom, #007180, #cbddc8);
-      color: white;
-      text-align: center;
-      height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      overflow: hidden;
-    }
-    .container {
-      position: relative;
-      max-width: 800px;
-      padding: 40px;
-      background: rgba(0, 0, 0, 0.5);
-      border-radius: 20px;
-      box-shadow: 0 10px 40px rgba(0,0,0,0.6);
-    }
-    .logo img {
-      width: 180px;
-      height: auto;
-      border-radius: 20px;
-      margin-bottom: 20px;
-    }
-    h1 {
-      font-size: 2.5em;
-      margin-bottom: 10px;
-    }
-    h3 {
-      font-weight: 300;
-      margin-bottom: 30px;
-    }
-    a {
-      color: #00ffcc;
-      text-decoration: none;
-      margin: 0 10px;
-      font-weight: 400;
-      transition: color 0.3s;
-    }
-    a:hover {
-      color: #ffffff;
-    }
-    .social-icons {
-      margin-top: 30px;
-    }
-    .social-icons a {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    .social-icons img {
-      width: 32px;
-      height: 32px;
-      filter: brightness(0) invert(1);
-      transition: transform 0.3s ease;
-    }
-    .social-icons img:hover {
-      transform: scale(1.2);
-    }
-  </style>
+  <title>MineStream Login</title>
+  <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <div class="container">
-    <div class="logo">
-      <img src="images/logo-flat.png" alt="CoolStar Logo">
-    </div>
-    <h1>CoolStar</h1>
-    <h3>iOS, Windows, and Linux Developer</h3>
-    <div class="nav">
-      <a href="iOS.html">iOS</a> |
-      <a href="chromebook/">Chromebooks</a>
-    </div>
-    <div class="social-icons">
-      <a href="https://github.com/coolstar" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
-      </a>
-      <a href="https://twitter.com/coolstarorg" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
-      </a>
-      <a href="https://discord.gg/Gg4bWeWJx8" target="_blank" rel="noopener">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
-      </a>
-    </div>
+  <div id="login-box">
+    <h2>Login</h2>
+    <input type="text" id="login-username" placeholder="Username"><br>
+    <input type="password" id="login-password" placeholder="Password"><br>
+    <button onclick="login()">Login</button>
+    <p>No account? <a href="register.html">Register here</a></p>
   </div>
+  <script src="assets/script.js"></script>
 </body>
 </html>
